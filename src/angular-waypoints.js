@@ -7,7 +7,7 @@
         return {
             restrict: 'A',
             link: function(scope, elem, attrs) {
-                new Waypoint(scope.$eval(attrs.waypoint)(scope, elem, attrs));
+                new Waypoint(scope.$eval(attrs.waypoint)(elem[0]));
             }
         };
     });
