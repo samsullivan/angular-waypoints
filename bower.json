@@ -1,0 +1,22 @@
+{
+  "name": "angular-waypoints",
+  "authors": [
+    "Sam Sullivan"
+  ],
+  "description": "An AngularJS wrapper for the Waypoints library.",
+  "main": "",
+  "keywords": [
+    "angularjs",
+    "waypoints",
+    "scrolling"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.2",
+    "waypoints": "imakewebthings/waypoints#~4.0.0"
+  }
+}
