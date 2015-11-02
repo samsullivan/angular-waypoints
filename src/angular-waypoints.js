@@ -8,6 +8,12 @@
             restrict: 'A',
             link: function(scope, elem, attrs) {
                 new Waypoint(scope.$eval(attrs.waypoint)(elem[0]));
+
+                scope.$watch(function() {
+                    return angular.element(elem).html();
+                }, function() {
+                    Waypoint.refreshAll();
+                });
             }
         };
     });
